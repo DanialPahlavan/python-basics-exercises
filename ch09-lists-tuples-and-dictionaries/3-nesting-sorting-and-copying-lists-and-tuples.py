@@ -8,9 +8,11 @@ data = ((1, 2), (3, 4))
 
 
 # Exercise 2
-# Loop over data a print the sum of each nested tuple
-for i in range(len(data)):
-    print(f"Row {i+1} sum: {data[i][0] + data[i][1]}")
+# Loop over data and print the sum of each nested tuple
+index = 1
+for row in data:
+    print(f"Row {index} sum: {sum(row)}")
+    index += 1
 
 
 # Exercise 3
